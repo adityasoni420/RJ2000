@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Rama Rewellers - fine jewellery, custom designs and current gold and silver rates.">
+  <title>Rama Rewellers | Timeless Jewellery</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="topbar"><span>✨ New bridal collection now available</span><a href="#contact">Visit our showroom</a></div>
+  <header class="nav-wrap">
+    <nav class="nav" aria-label="Main navigation">
+      <a class="brand" href="#home" aria-label="Rama Rewellers home">
+        <span class="brand-mark">R</span>
+        <span><strong>RAMA</strong><small>REWELLERS</small></span>
+      </a>
+      <button class="menu-btn" aria-label="Toggle menu" aria-expanded="false">☰</button>
+      <div class="nav-links">
+        <a href="#home">Home</a><a href="#about">About</a><a href="#collections">Collections</a>
+        <a href="#custom">Custom Design</a><a href="#gallery">Gallery</a><a href="#contact">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home" class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow">Established with trust · Crafted for forever</p>
+        <h1>Jewellery that tells<br><em>your story</em></h1>
+        <p class="hero-text">Discover timeless designs in gold, diamond and silver—celebrating every milestone with elegance.</p>
+        <div class="hero-actions"><a class="btn primary" href="#collections">Explore Collection</a><a class="text-link" href="#custom">Create your own piece →</a></div>
+      </div>
+      <div class="hero-art" aria-label="Luxury jewellery display">
+        <div class="ring"><span></span></div>
+        <div class="sparkle s1">✦</div><div class="sparkle s2">✦</div><div class="sparkle s3">✦</div>
+      </div>
+    </section>
+
+    <section class="rates" aria-label="Live metal rates">
+      <div class="rate-heading"><span class="live-dot"></span><div><small>TODAY'S MARKET</small><strong>Live Gold & Silver Rates</strong></div></div>
+      <div class="rate"><span>Gold · 24K</span><strong id="gold-rate">₹92,500 <small>/ 10g</small></strong></div>
+      <div class="rate"><span>Silver</span><strong id="silver-rate">₹1,12,000 <small>/ kg</small></strong></div>
+      <div class="rate-update"><span id="rate-status">Indicative rates</span><button id="refresh-rates" title="Refresh rates">↻</button></div>
+    </section>
+
+    <section id="collections" class="section">
+      <div class="section-heading"><div><p class="eyebrow">Our collections</p><h2>Find your perfect piece</h2></div><a class="text-link" href="#gallery">View all jewellery →</a></div>
+      <div class="collection-grid">
+        <article class="collection-card gold"><div class="jewel-icon">◈</div><div><span>01</span><h3>Gold Jewellery</h3><p>Classic and contemporary gold pieces</p><a href="#contact">Explore →</a></div></article>
+        <article class="collection-card diamond"><div class="jewel-icon">◇</div><div><span>02</span><h3>Diamond Jewellery</h3><p>Brilliance for your special moments</p><a href="#contact">Explore →</a></div></article>
+        <article class="collection-card silver"><div class="jewel-icon">◉</div><div><span>03</span><h3>Silver Jewellery</h3><p>Elegant designs for every occasion</p><a href="#contact">Explore →</a></div></article>
+        <article class="collection-card bridal"><div class="jewel-icon">❖</div><div><span>04</span><h3>Bridal Collection</h3><p>Heirlooms made for your day</p><a href="#contact">Explore →</a></div></article>
+      </div>
+    </section>
+
+    <section id="about" class="about section">
+      <div class="about-art"><div class="about-frame"><span class="about-gem">✦</span><p>Crafted<br>with trust</p></div></div>
+      <div class="about-copy"><p class="eyebrow">The Rama Rewellers promise</p><h2>Tradition, refined for today</h2><p>Every piece is chosen and crafted with a commitment to authenticity, thoughtful design and lasting beauty. From first purchase to family heirloom, we are honoured to be part of your journey.</p><div class="stats"><div><strong>100%</strong><span>Authentic Jewellery</span></div><div><strong>Made</strong><span>For Every Occasion</span></div><div><strong>Expert</strong><span>Personal Guidance</span></div></div></div>
+    </section>
+
+    <section id="custom" class="custom section">
+      <div class="custom-copy"><p class="eyebrow">Made exclusively for you</p><h2>Your vision, beautifully realised</h2><p>Share a reference or idea, and our team will help you create a one-of-a-kind piece with complete transparency at every step.</p><a class="btn primary" href="#contact">Enquire for custom design</a></div>
+      <div class="custom-steps"><div><span>1</span><p><strong>Share your idea</strong><small>Photo, sketch or inspiration</small></p></div><div><span>2</span><p><strong>Choose your details</strong><small>Metal, stones and finish</small></p></div><div><span>3</span><p><strong>Receive your piece</strong><small>Crafted and quality checked</small></p></div></div>
+    </section>
+
+    <section id="gallery" class="section gallery-section">
+      <div class="section-heading"><div><p class="eyebrow">Custom jewellery gallery</p><h2>Recent creations</h2></div><label class="btn outline" for="gallery-upload">+ Add photos</label></div>
+      <input id="gallery-upload" type="file" accept="image/*" multiple hidden>
+      <div id="gallery-grid" class="gallery-grid"><p class="gallery-empty">Add your jewellery photos to showcase custom creations.</p></div>
+    </section>
+
+    <section id="contact" class="contact section">
+      <div><p class="eyebrow">We would love to meet you</p><h2>Visit or get in touch</h2><p>Questions about a piece, custom design or today's rates? Our team is ready to help.</p></div>
+      <div class="contact-cards"><a href="tel:+910000000000"><span>☎</span><p><small>CALL US</small><strong>+91 00000 00000</strong></p></a><a href="https://wa.me/910000000000" target="_blank" rel="noreferrer"><span>◌</span><p><small>WHATSAPP</small><strong>Chat with us</strong></p></a><div><span>⌖</span><p><small>ADDRESS</small><strong>Add your showroom address</strong></p></div></div>
+    </section>
+  </main>
+
+  <footer><div class="brand footer-brand"><span class="brand-mark">R</span><span><strong>RAMA</strong><small>REWELLERS</small></span></div><p>© <span id="year"></span> Rama Rewellers. All rights reserved.</p></footer>
+  <a class="whatsapp" href="https://wa.me/910000000000" target="_blank" rel="noreferrer" aria-label="WhatsApp us">◌</a>
+  <script src="script.js"></script>
+</body>
+</html>
